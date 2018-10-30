@@ -1,5 +1,5 @@
 : prime
-	dup 0 < 
+	dup 2 < 
 	if drop 0
 	else dup 4 < 
 		if drop 1
@@ -15,3 +15,4 @@
 				then
 		then
 	then ;
+: alloc 8 allot dup rot swap ! ;
